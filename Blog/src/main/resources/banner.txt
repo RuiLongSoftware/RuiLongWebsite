@@ -1,0 +1,8 @@
+${AnsiColor.BLUE}${AnsiStyle.BOLD} JIMSSS-BLOG
+__________.__
+\______   \  |   ____   ____
+ |    |  _/  |  /  _ \ / ___\
+ |    |   \  |_(  <_> ) /_/  >
+ |______  /____/\____/\___  /
+        \/           /_____/
+${AnsiStyle.BOLD}SpringBoot version: ${AnsiStyle.ITALIC}${spring-boot.formatted-version}${AnsiStyle.NORMAL}

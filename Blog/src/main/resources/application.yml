@@ -1,0 +1,30 @@
+#SPRING BOOT YML
+spring:
+  servlet:
+    multipart:
+      max-request-size: 1GB
+      max-file-size: 1GB
+  datasource:
+    url: jdbc:mysql://localhost:3306/web
+    username: root
+    password: PASSWORD
+  thymeleaf:
+    cache: false
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 3390544635@qq.com
+    password: goeygrycyokycieb
+    default-encoding: UTF-8
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+server:
+  shutdown: graceful
+  port: 8888
+admin:
+  password: Rsu1sK1ia25f5mar53Yi46p8Ty3DEDAde2y221fCAD4TBUOu1ua0s7924

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>RuiLong-管理员管理平台</title>
+    <link rel="shortcut icon" href="http://localhost:8888/other/logo.ico">
+</head>
+<body>
+<h1>发布的内容:</h1>
+<br>
+<div th:each="content:${contentMessage}">
+    <span th:text="${content.content}"></span>
+    <br>
+    <span>
+        <a th:href="${content.contentHref}">
+            查看
+        </a>
+    </span>
+    <br>
+    <br>
+</div>
+<br>
+<h1>发布新内容:(上传PDF文件)</h1>
+<br>
+<form role="form" action="/newBlog" method="post" enctype="multipart/form-data">
+    标题:<input type="text" id="title" name="title">
+    <br>
+    <input type="file" name="file" required>
+    <br>
+    <input type="submit" id="go" value="发布">
+</form>
+<br>
+</body>
+</html>

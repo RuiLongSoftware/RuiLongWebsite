@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RuiLong-首页</title>
+  <link rel="shortcut icon" href="http://localhost:8888/other/logo.ico">
+</head>
+<body>
+用户名:<p th:text="${un}"></p>
+<a href="/login">
+  登录
+</a>
+<div th:each="content:${contentMessage}">
+  <span th:text="${content.content}"></span>
+  <br>
+  <span>
+        <a th:href="${content.contentHref}">
+            查看
+        </a>
+    </span>
+  <br>
+  <br>
+</div>
+</body>
+</html>
